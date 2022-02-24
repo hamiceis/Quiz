@@ -25,6 +25,7 @@ questions.forEach((quest, index) =>{
 if(score == 150){
     p.innerHTML = `Parabéns você acertou todas as questões.`
     p.style.color="green"
+    p.style.textAlign="end"
 } else if(score == 0){
     p.innerHTML = `Infelizmente você errou todas as questões, tente novamente`
     p.style.color="red"
