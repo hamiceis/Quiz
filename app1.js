@@ -1,8 +1,7 @@
 const form = document.querySelector('.form')
 const p = document.querySelector('.pts')
 
-
-const correcao = ['A','C','C','B']
+const correcao = ['B','B','A','B','C','B']
 
 form.addEventListener('submit', event =>{
     event.preventDefault()
@@ -12,7 +11,9 @@ const questions = [
     form.inputQuestion1.value,
     form.inputQuestion2.value,
     form.inputQuestion3.value,
-    form.inputQuestion4.value
+    form.inputQuestion4.value,
+    form.inputQuestion5.value,
+    form.inputQuestion6.value
 ]
 
 questions.forEach((quest, index) =>{
@@ -21,7 +22,7 @@ questions.forEach((quest, index) =>{
     }
 })
 
-if(score == 100){
+if(score == 150){
     p.innerHTML = `Parabéns você acertou todas as questões.`
     p.style.color="green"
 } else if(score == 0){
